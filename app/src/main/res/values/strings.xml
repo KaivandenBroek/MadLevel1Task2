@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MadLevel1Task2</string>
+    <string name="submit">SUBMIT</string>
+    <string name="conj">Conjunction (AND)</string>
+</resources>
