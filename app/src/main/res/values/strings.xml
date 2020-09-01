@@ -4,9 +4,8 @@
     <string name="conj">Conjunction (AND)</string>
     <string name="a">A</string>
     <string name="b">B</string>
-    <string name="t">T</string>
-    <string name="f">F</string>
-    <string name="correct">Correct</string>
-    <string name="incorrect">Incorrect</string>
+    <string name="T">T</string>
+    <string name="F">F</string>
     <string name="ab">A ^ B</string>
+    <string name="correct">Amount of correct answers: %d </string>
 </resources>
