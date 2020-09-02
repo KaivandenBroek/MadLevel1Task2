@@ -8,7 +8,6 @@ import com.example.madlevel1task2.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private var correctsAnswers = 0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,28 +27,26 @@ class MainActivity : AppCompatActivity() {
     Checks the textfields for the answers
      */
     private fun checkAnswers() {
-        val answer1 = binding.answer1.text
-        val answer2 = binding.answer2.text
-        val answer3 = binding.answer3.text
-        val answer4 = binding.answer4.text
+        var correctsAnswers = 0
+        val answer1 = binding.answer1.text.toString()
+        val answer2 = binding.answer2.text.toString()
+        val answer3 = binding.answer3.text.toString()
+        val answer4 = binding.answer4.text.toString()
 
-        if (answer1.equals(getString(R.string.T))) {
-            correct()
+        if (answer1 == getString(R.string.T)) {
+            correctsAnswers++
         }
-        if (answer2.equals(getString(R.string.F))) {
-            correct()
+        if (answer2 == getString(R.string.F)) {
+            correctsAnswers++
         }
-        if (answer3.equals(getString(R.string.F))) {
-            correct()
+        if (answer3 == getString(R.string.F)) {
+            correctsAnswers++
         }
-        if (answer4.equals(getString(R.string.F))) {
-            correct()
+        if (answer4 == getString(R.string.F)) {
+            correctsAnswers++
         }
-        Toast.makeText(this, getString(R.string.correct, correctsAnswers), correctsAnswers).show()
+        Toast.makeText(this, getString(R.string.correct, correctsAnswers), Toast.LENGTH_SHORT)
+            .show()
 
-    }
-
-    private fun correct() {
-        correctsAnswers++
     }
 }
